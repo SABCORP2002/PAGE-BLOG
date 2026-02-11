@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comment la mécatronique — fusion de la mécanique, l'électronique et l'informatique — est en train de remodeler notre civilisation." />
+  <meta name="author" content="Sulaimanu Adamu Bello" />
+  <title>La Mécatronique — La Révolution Silencieuse | Sulaimanu Adamu Bello</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <header class="site-header">
+    <a href="#" class="logo">BELLO<span>.</span>TECH</a>
+    <span class="header-tag">Mécatronique &amp; Futur</span>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img
+        class="hero-bg-img"
+        src="assets/images/hero-cover.jpg"
+        alt="Vue d'ensemble d'une usine mécatronique moderne"
+        onerror="this.style.display='none'"
+      />
+    </div>
+
+    <!-- Circuit SVG décoratif qui est sur Hero la bro -->
+    <svg class="hero-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stop-color="#b8933a"/>
+          <stop offset="100%" stop-color="#d4a84b"/>
+        </linearGradient>
+      </defs>
+      <g stroke="url(#cg)" stroke-width="1" fill="none">
+        <polyline points="0,200 200,200 200,100 400,100 400,300 600,300 600,150 800,150 800,400 1000,400 1000,200 1200,200 1440,200"/>
+        <polyline points="0,450 150,450 150,600 350,600 350,500 550,500 550,650 750,650 750,450 950,450 950,700 1150,700 1150,500 1440,500"/>
+        <polyline points="100,0 100,100 300,100 300,250 500,250 500,0"/>
+        <polyline points="700,0 700,150 900,150 900,0"/>
+        <polyline points="1100,0 1100,200 1300,200 1300,50 1440,50"/>
+        <polyline points="0,700 250,700 250,800 500,800 500,750 700,750 700,900"/>
+        <polyline points="900,800 900,900"/>
+        <polyline points="1100,800 1100,750 1300,750 1300,900"/>
+        <circle cx="200"  cy="200" r="4" fill="url(#cg)"/>
+        <circle cx="400"  cy="100" r="4" fill="url(#cg)"/>
+        <circle cx="600"  cy="300" r="4" fill="url(#cg)"/>
+        <circle cx="800"  cy="150" r="4" fill="url(#cg)"/>
+        <circle cx="1000" cy="400" r="4" fill="url(#cg)"/>
+        <circle cx="350"  cy="600" r="4" fill="url(#cg)"/>
+        <circle cx="550"  cy="500" r="4" fill="url(#cg)"/>
+        <circle cx="750"  cy="650" r="4" fill="url(#cg)"/>
+        <circle cx="950"  cy="450" r="4" fill="url(#cg)"/>
+        <circle cx="1150" cy="700" r="4" fill="url(#cg)"/>
+      </g>
+    </svg>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-category">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 0a1 1 0 01.707.293l7 7A1 1 0 0116 8a1 1 0 01-.293.707l-7 7A1 1 0 018 16a1 1 0 01-.707-.293l-7-7A1 1 0 010 8a1 1 0 01.293-.707l7-7A1 1 0 018 0zm0 2.414L2.414 8 8 13.586 13.586 8 8 2.414zM8 5a3 3 0 110 6A3 3 0 018 5zm0 1.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
+        </svg>
+        Technologie — Mécatronique
+      </div>
+
+      <h1 class="hero-title">
+        La Mécatronique —<br/>
+        <em>La Révolution Silencieuse</em><br/>
+        qui Redessine Notre Monde
+      </h1>
+
+      <p class="hero-subtitle">
+        Des chaînes de production autonomes aux membres bioniques, la fusion de la mécanique, de l'électronique et de l'informatique engendre une civilisation entièrement nouvelle.
+      </p>
+
+      <div class="hero-meta">
+        <div class="author-block">
+          <div class="author-avatar">
+            <img
+              src="assets/images/avatar.svg"
+              alt="Sulaimanu Adamu Bello"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+            />
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+              <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z"/>
+            </svg>
+          </div>
+          <div class="author-info">
+            <span class="author-name">Sulaimanu Adamu Bello</span>
+            <span class="author-role">Ingénieur &amp; Auteur Tech</span>
+          </div>
+        </div>
+
+        <div class="hero-meta-divider"></div>
+
+        <div class="meta-item">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm.5 4a.5.5 0 00-1 0v4.25l3.07 2.05a.5.5 0 00.54-.84L8.5 7.72V4z"/>
+          </svg>
+          12 min de lecture
+        </div>
+
+        <div class="meta-item">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3.5 0a.5.5 0 01.5.5V1h8V.5a.5.5 0 011 0V1h1a2 2 0 012 2v11a2 2 0 01-2 2H2a2 2 0 01-2-2V3a2 2 0 012-2h1V.5a.5.5 0 01.5-.5zM1 6v8a1 1 0 001 1h12a1 1 0 001-1V6H1z"/>
+          </svg>
+          Février 2026
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Défiler</span>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 16.5l-7-7 1.41-1.41L12 13.67l5.59-5.58L19 9.5l-7 7z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- MAIN LAYOUT -->
+  <div class="main-wrapper">
+    <article class="article-body">
+
+      <p class="article-intro">
+        Il y a à peine un demi-siècle, un robot n'existait que dans les pages d'un roman de science-fiction. Aujourd'hui, <strong>des millions de systèmes mécatroniques</strong> travaillent en silence dans nos usines, nos hôpitaux, nos véhicules et même dans nos corps. La mécatronique — cette discipline qui fusionne la mécanique, l'électronique, l'informatique et le contrôle-commande — est peut-être la révolution industrielle la plus profonde que l'humanité n'ait jamais connue.
+      </p>
+
+      <!-- SECTION 1 -->
+      <h2 id="definition">Qu'est-ce que la Mécatronique ?</h2>
+
+      <p>
+        Le terme « mécatronique » fut inventé en <strong>1969</strong> par l'ingénieur japonais Tetsuro Mori, chez Yaskawa Electric. À l'origine, il désignait simplement la combinaison des mots <em>mécanique</em> et <em>électronique</em>. Depuis, la définition s'est considérablement enrichie.
+        <a href="https://www.ieee.org/publications/journals/mechatronics.html" target="_blank" rel="noopener" class="source-link" title="IEEE Mechatronics">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+          IEEE
+        </a>
+      </p>
+
+      <p>
+        Aujourd'hui, la mécatronique est reconnue comme une discipline à part entière, définie par l'IEEE comme : la conception synergique de systèmes mécaniques et électroniques, intégrée avec le contrôle informatique, pour créer des produits et des processus fonctionnellement efficaces.
+      </p>
+
+      <blockquote>
+        <p>« La mécatronique n'est pas la somme de ses parties — c'est une philosophie de conception qui abolit les frontières entre le monde physique et le monde numérique. »</p>
+        <cite>— Prof. Rolf Isermann, Technische Universität Darmstadt</cite>
+      </blockquote>
+
+      <h3 id="piliers">Les quatre piliers fondateurs</h3>
+
+      <div class="article-img-wrap">
+        <img
+          src="assets/images/piliers-mecatronique.png"
+          alt="Schéma illustrant les quatre piliers fondateurs de la mécatronique : mécanique, électronique, informatique et contrôle-commande"
+          loading="lazy"
+        />
+        <div class="article-img-caption">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1a.5.5 0 01.5.5v.793l.646-.647a.5.5 0 01.708.708L9 3.207V4h1.293l.854-.854a.5.5 0 01.708.708L11 4.707V6a2 2 0 01-2 2H7a2 2 0 01-2-2V4.707l-.854-.853a.5.5 0 11.708-.708l.646.647V1.5A.5.5 0 018 1zM2.5 7A.5.5 0 003 6.5V4h-.5a.5.5 0 010-1H4V1.5a.5.5 0 011 0V3h6V1.5a.5.5 0 011 0V3h1.5a.5.5 0 010 1H13v2.5a.5.5 0 01-1 0V4H4v2.5a.5.5 0 01-.5.5H3z"/></svg>
+          <span>Les quatre domaines d'ingénierie convergents qui constituent la mécatronique</span>
+        </div>
+      </div>
+
+      <ul>
+        <li><strong>Mécanique</strong> — structures, actionneurs, transmissions, matériaux avancés</li>
+        <li><strong>Électronique</strong> — capteurs, microcontrôleurs, puissance, circuits embarqués</li>
+        <li><strong>Informatique</strong> — algorithmes, intelligence artificielle, traitement temps réel</li>
+        <li><strong>Contrôle-commande</strong> — systèmes de régulation, feedback, adaptation autonome</li>
+      </ul>
+
+      <div class="stat-row">
+        <div class="stat-card">
+          <span class="stat-num">$840Md</span>
+          <span class="stat-label">Marché mondial de la robotique mécatronique estimé pour 2030</span>
+          <a class="stat-source" href="https://ifr.org/ifr-press-releases/news/robot-race-the-worlds-top-10-automated-countries" target="_blank" rel="noopener">Source : IFR — International Federation of Robotics</a>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">27%</span>
+          <span class="stat-label">Croissance annuelle estimée du secteur sur la prochaine décennie</span>
+          <a class="stat-source" href="https://www.marketsandmarkets.com/Market-Reports/mechatronics-market.html" target="_blank" rel="noopener">Source : MarketsandMarkets Research</a>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">4,2M</span>
+          <span class="stat-label">Robots industriels installés dans le monde en 2024</span>
+          <a class="stat-source" href="https://ifr.org/free-downloads/" target="_blank" rel="noopener">Source : World Robotics Report, IFR 2024</a>
+        </div>
+      </div>
+
+      <div class="section-rule"></div>
+
+      <!-- SECTION 2 -->
+      <h2 id="industrie">L'Industrie 4.0 : l'Usine qui Pense</h2>
+
+      <p>
+        La quatrième révolution industrielle — dite Industrie 4.0 — est en grande partie le fruit de la mécatronique avancée. Les usines d'aujourd'hui ne sont plus de simples sites de production ; ce sont des organismes intelligents, capables de s'adapter en temps réel à la demande, aux pannes et aux conditions environnementales.
+        <a href="https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/" target="_blank" rel="noopener" class="source-link" title="World Economic Forum — Industrie 4.0">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+          WEF
+        </a>
+      </p>
+
+      <p>
+        Des entreprises comme Siemens, BMW ou FANUC déploient des cellules de production entièrement automatisées où robots collaboratifs (<em>cobots</em>), jumeaux numériques et systèmes de vision artificielle coexistent. La cadence de production monte, les défauts chutent, et la personnalisation de masse — jadis oxymore économique — devient réalité.
+      </p>
+
+      <div class="article-img-wrap">
+        <img
+          src="assets/images/usine-industrie-40.png"
+          alt="Ligne de production automatisée dans une usine Industrie 4.0 avec robots et systèmes de vision"
+          loading="lazy"
+        />
+        <div class="article-img-caption">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1a.5.5 0 01.5.5v.793l.646-.647a.5.5 0 01.708.708L9 3.207V4h1.293l.854-.854a.5.5 0 01.708.708L11 4.707V6a2 2 0 01-2 2H7a2 2 0 01-2-2V4.707l-.854-.853a.5.5 0 11.708-.708l.646.647V1.5A.5.5 0 018 1zM2.5 7A.5.5 0 003 6.5V4h-.5a.5.5 0 010-1H4V1.5a.5.5 0 011 0V3h6V1.5a.5.5 0 011 0V3h1.5a.5.5 0 010 1H13v2.5a.5.5 0 01-1 0V4H4v2.5a.5.5 0 01-.5.5H3z"/></svg>
+          <span>Usine intelligente de l'ère Industrie 4.0</span>
+        </div>
+      </div>
+
+      <h3 id="cobots">Les Cobots : quand la machine devient collègue</h3>
+
+      <p>
+        Contrairement aux robots industriels classiques, isolés derrière des cages de sécurité, les cobots (robots collaboratifs) sont conçus pour opérer en totale sécurité aux côtés des opérateurs humains. Grâce à une combinaison de capteurs de force, de vision stéréoscopique et d'algorithmes de détection de collision, ils s'arrêtent instantanément au moindre contact imprévu.
+        <a href="https://www.universal-robots.com/blog/what-is-a-collaborative-robot/" target="_blank" rel="noopener" class="source-link" title="Universal Robots — définition des cobots">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+          Universal Robots
+        </a>
+      </p>
+
+      <div class="article-img-wrap">
+        <img
+          src="assets/images/cobot-operateur.png"
+          alt="Opérateur humain travaillant côte à côte avec un robot collaboratif (cobot) sur une ligne d'assemblage"
+          loading="lazy"
+        />
+        <div class="article-img-caption">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1a.5.5 0 01.5.5v.793l.646-.647a.5.5 0 01.708.708L9 3.207V4h1.293l.854-.854a.5.5 0 01.708.708L11 4.707V6a2 2 0 01-2 2H7a2 2 0 01-2-2V4.707l-.854-.853a.5.5 0 11.708-.708l.646.647V1.5A.5.5 0 018 1zM2.5 7A.5.5 0 003 6.5V4h-.5a.5.5 0 010-1H4V1.5a.5.5 0 011 0V3h6V1.5a.5.5 0 011 0V3h1.5a.5.5 0 010 1H13v2.5a.5.5 0 01-1 0V4H4v2.5a.5.5 0 01-.5.5H3z"/></svg>
+          <span>Collaboration homme-cobot sur une ligne d'assemblage</span>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <div class="highlight-box-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm1 13h-2V11h2v4zm0-6h-2V7h2v2z"/></svg>
+        </div>
+        <div class="highlight-box-text">
+          <strong>Chiffre clé :</strong> Le marché des cobots devrait atteindre <strong>9,7 milliards de dollars</strong> d'ici 2028, avec un taux de croissance annuel composé supérieur à 30%. Les PME constituent la principale force de croissance, adoptant la robotisation pour la première fois grâce à des systèmes abordables et rapides à déployer.
+          <a href="https://www.grandviewresearch.com/industry-analysis/collaborative-robot-market" target="_blank" rel="noopener" class="source-link" style="display:inline-flex; margin-top:.4rem;">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+            Grand View Research — Cobot Market Report
+          </a>
+        </div>
+      </div>
+
+      <div class="section-rule"></div>
+
+      <!-- SECTION 3-->
+      <h2 id="medical">Mécatronique Médicale : Réparer le Corps Humain</h2>
+
+      <p>
+        L'une des applications les plus bouleversantes de la mécatronique se joue dans le domaine médical. Des membres bioniques aux exosquelettes de rééducation, en passant par la chirurgie assistée par robot, la frontière entre l'ingénierie et la biologie s'efface progressivement.
+      </p>
+
+      <h3 id="protheses">Les prothèses bioniques nouvelle génération</h3>
+
+      <p>
+        La société Össur et le MIT Media Lab ont développé des prothèses de membres inférieurs intégrant des capteurs myoélectriques capables de lire les signaux nerveux résiduels du patient. Le système traduit ces micro-impulsions électriques en mouvements précis — permettre à un amputé de courir, monter des escaliers, ou même danser.
+        <a href="https://www.media.mit.edu/groups/biomechatronics/overview/" target="_blank" rel="noopener" class="source-link" title="MIT Media Lab — Biomechatronics Group">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+          MIT Media Lab
+        </a>
+      </p>
+
+      <div class="article-img-wrap">
+        <img
+          src="assets/images/prothese-bionique.png"
+          alt="Prothèse de bras bionique de nouvelle génération contrôlée par des signaux nerveux myoélectriques"
+          loading="lazy"
+        />
+        <div class="article-img-caption">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1a.5.5 0 01.5.5v.793l.646-.647a.5.5 0 01.708.708L9 3.207V4h1.293l.854-.854a.5.5 0 01.708.708L11 4.707V6a2 2 0 01-2 2H7a2 2 0 01-2-2V4.707l-.854-.853a.5.5 0 11.708-.708l.646.647V1.5A.5.5 0 018 1zM2.5 7A.5.5 0 003 6.5V4h-.5a.5.5 0 010-1H4V1.5a.5.5 0 011 0V3h6V1.5a.5.5 0 011 0V3h1.5a.5.5 0 010 1H13v2.5a.5.5 0 01-1 0V4H4v2.5a.5.5 0 01-.5.5H3z"/></svg>
+          <span>Prothèse bionique intelligente contrôlée par l'activité musculaire résiduelle</span>
+        </div>
+      </div>
+
+      <ol>
+        <li>Capteurs EMG (électromyographiques) lisant les signaux musculaires</li>
+        <li>Processeur embarqué analysant l'intention de mouvement en 20 millisecondes</li>
+        <li>Actionneurs électromagnétiques linéaires traduisant le signal en geste</li>
+        <li>Retour haptique transmettant au patient une sensation de pression et de texture</li>
+        <li>Apprentissage adaptatif personnalisant le comportement à la démarche de chaque utilisateur</li>
+      </ol>
+
+      <blockquote>
+        <p>« Nous ne réparons plus le corps humain — nous l'augmentons. La prochaine génération de prothèses surpassera biologiquement le membre naturel dans de nombreux contextes. »</p>
+        <cite>— Dr. Hugh Herr, MIT Media Lab — <a href="https://www.ted.com/talks/hugh_herr_new_bionics_let_us_run_climb_and_dance" target="_blank" rel="noopener" style="color:var(--gold); font-style:normal;">TED Talk, 2014</a></cite>
+      </blockquote>
+
+      <h3 id="chirurgie">Chirurgie robotique : précision nanométrique</h3>
+
+      <p>
+        Le système Da Vinci, développé par Intuitive Surgical, est devenu l'emblème de la chirurgie mécatronique. Grâce à des bras robotisés à sept degrés de liberté, un chirurgien opère depuis une console, ses mouvements filtrés des tremblements naturels de la main et amplifiés en précision. Des milliers de procédures cardiaques, urologiques et gynécologiques bénéficient chaque année de cette technologie.
+        <a href="https://www.intuitive.com/en-us/about-us/company/technology" target="_blank" rel="noopener" class="source-link" title="Intuitive Surgical — Da Vinci Technology">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+          Intuitive Surgical
+        </a>
+      </p>
+
+      <div class="section-rule"></div>
+
+      <!-- SECTION 4-->
+      <h2 id="transport">Révolution du Transport : Vers le Véhicule Autonome</h2>
+
+      <p>
+        La voiture autonome n'est pas simplement un véhicule avec un ordinateur — c'est un robot mécatronique de plusieurs tonnes se déplaçant à haute vitesse dans un environnement imprévisible. Sa conception requiert la convergence de dizaines de disciplines : LiDAR, vision par ordinateur, systèmes de frein-by-wire, direction électronique, fusion de capteurs et prises de décision temps réel.
+      </p>
+
+      <p>
+        Tesla, Waymo, Mercedes et BYD investissent des milliards dans ces architectures. Le niveau SAE 4 d'autonomie (conduite sans surveillance humaine dans des zones délimitées) est aujourd'hui opérationnel dans plusieurs villes à travers le monde.
+        <a href="https://www.sae.org/blog/sae-j3016-update" target="_blank" rel="noopener" class="source-link" title="SAE International — Niveaux d'autonomie">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+          SAE International J3016
+        </a>
+      </p>
+
+      <!-- la video youtube -->
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/watch?v=i41kfUC1eSI"
+          title="L'avenir de la mécatronique et de la robotique : démonstrations en conditions réelles"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="video-caption">Systèmes avancés de robotique mécatronique appliqués au transport autonome</p>
+
+      <div class="section-rule"></div>
+
+      <!-- SECTION 5 -->
+      <h2 id="agriculture">Agriculture de Précision : Nourrir 10 Milliards d'Humains</h2>
+
+      <p>
+        Un secteur souvent oublié dans les discussions sur la haute technologie est pourtant l'un des terrains d'innovation mécatronique les plus actifs : l'agriculture. Face aux défis climatiques, à la pénurie de main-d'œuvre rurale et à la nécessité d'augmenter les rendements tout en réduisant l'empreinte environnementale, la mécatronique agricole offre des solutions concrètes et immédiates.
+        <a href="https://www.fao.org/digital-agriculture/en/" target="_blank" rel="noopener" class="source-link" title="FAO — Agriculture numérique">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+          FAO Organisation des Nations Unies pour l'alimentation
+        </a>
+      </p>
+
+      <div class="article-img-wrap">
+        <img
+          src="assets/images/drone-agriculture.png"
+          alt="Drone agricole de précision survolant des cultures pour la pulvérisation et l'analyse des plants"
+          loading="lazy"
+        />
+        <div class="article-img-caption">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1a.5.5 0 01.5.5v.793l.646-.647a.5.5 0 01.708.708L9 3.207V4h1.293l.854-.854a.5.5 0 01.708.708L11 4.707V6a2 2 0 01-2 2H7a2 2 0 01-2-2V4.707l-.854-.853a.5.5 0 11.708-.708l.646.647V1.5A.5.5 0 018 1zM2.5 7A.5.5 0 003 6.5V4h-.5a.5.5 0 010-1H4V1.5a.5.5 0 011 0V3h6V1.5a.5.5 0 011 0V3h1.5a.5.5 0 010 1H13v2.5a.5.5 0 01-1 0V4H4v2.5a.5.5 0 01-.5.5H3z"/></svg>
+          <span>Drone de pulvérisation de précision réduisant l'usage des pesticides — replacez par assets/images/drone-agriculture.jpg</span>
+        </div>
+      </div>
+
+      <ul>
+        <li>Tracteurs autonomes guidés par GPS centimétrique et vision artificielle</li>
+        <li>Drones de pulvérisation précision, réduisant l'usage des pesticides de 40% à 70%</li>
+        <li>Robots de désherbage mécaniques éliminant les herbicides chimiques</li>
+        <li>Systèmes d'irrigation intelligente pilotés par capteurs d'humidité et IA météo</li>
+        <li>Machines de récolte adaptative ajustant leur comportement selon la maturité des fruits</li>
+      </ul>
+
+      <div class="section-rule"></div>
+
+      <!-- SECTION 6-->
+      <h2 id="futur">L'Horizon 2040 : Ce que la Mécatronique Promet</h2>
+
+      <p>
+        Si les deux dernières décennies ont été marquées par la numérisation et la connectivité, les deux prochaines appartiennent à la <em>physicalisation de l'intelligence</em> — c'est-à-dire l'inscription de l'intelligence artificielle dans des corps mécaniques capables d'agir sur le monde réel.
+      </p>
+
+      <h3 id="nanorobots">Nanorobots médicaux : médecine de l'intérieur</h3>
+
+      <p>
+        Des équipes de recherche à l'ETH Zurich et à l'Université de Drexel travaillent sur des nanomachines capables de naviguer dans la circulation sanguine pour détecter et neutraliser des cellules cancéreuses, délivrer des médicaments à précision moléculaire ou effectuer des réparations mécaniques au niveau cellulaire.
+        <a href="https://ethz.ch/en/news-and-events/eth-news/news/2023/01/nanorobots-in-the-bloodstream.html" target="_blank" rel="noopener" class="source-link" title="ETH Zurich — Nanorobots">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+          ETH Zurich Research
+        </a>
+      </p>
+
+      <h3 id="soft-robotics">Soft Robotics : la machine qui se déforme</h3>
+
+      <p>
+        La robotique souple (<em>soft robotics</em>) abandonne l'acier et les engrenages au profit d'élastomères, de matériaux à mémoire de forme et d'actionneurs pneumatiques inspirés des pieuvres et des éléphants. Ces robots peuvent s'insinuer dans des espaces impossibles, manipuler des objets fragiles sans les endommager, et s'adapter à des environnements entièrement inconnus.
+        <a href="https://softroboticstoolkit.com/" target="_blank" rel="noopener" class="source-link" title="Soft Robotics Toolkit — Harvard">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>
+          Soft Robotics Toolkit — Harvard
+        </a>
+      </p>
+
+      <div class="article-img-wrap">
+        <img
+          src="assets/images/soft-robotics.png"
+          alt="Robot souple (soft robot) à actionneurs pneumatiques s'adaptant à la forme d'objets fragiles"
+          loading="lazy"
+        />
+        <div class="article-img-caption">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1a.5.5 0 01.5.5v.793l.646-.647a.5.5 0 01.708.708L9 3.207V4h1.293l.854-.854a.5.5 0 01.708.708L11 4.707V6a2 2 0 01-2 2H7a2 2 0 01-2-2V4.707l-.854-.853a.5.5 0 11.708-.708l.646.647V1.5A.5.5 0 018 1zM2.5 7A.5.5 0 003 6.5V4h-.5a.5.5 0 010-1H4V1.5a.5.5 0 011 0V3h6V1.5a.5.5 0 011 0V3h1.5a.5.5 0 010 1H13v2.5a.5.5 0 01-1 0V4H4v2.5a.5.5 0 01-.5.5H3z"/></svg>
+          <span>Soft robot à actionneurs pneumatiques inspiré des pieuvres — replacez par assets/images/soft-robotics.jpg</span>
+        </div>
+      </div>
+
+      <blockquote>
+        <p>« D'ici 2040, la distinction entre "machine" et "organisme vivant" sera suffisamment floue pour forcer une redéfinition philosophique et juridique fondamentale. »</p>
+        <cite>— Rapport de prospective, <a href="https://www.weforum.org/reports/the-future-of-jobs-report-2023" target="_blank" rel="noopener" style="color:var(--gold); font-style:normal;">World Economic Forum, 2023</a></cite>
+      </blockquote>
+
+      <div class="section-rule"></div>
+
+      <!--SECTION 7 -->
+      <h2 id="enjeux">Enjeux Éthiques et Sociétaux</h2>
+
+      <p>
+        Aucune révolution technologique n'est sans ombres. La montée en puissance des systèmes mécatroniques soulève des questions essentielles sur lesquelles la société doit délibérer collectivement — et promptement.
+      </p>
+
+      <ul>
+        <li><strong>Emploi et reconversion</strong> — L'automatisation déplace des métiers entiers : comment accompagner les travailleurs ?</li>
+        <li><strong>Sécurité des systèmes autonomes</strong> — Qui est responsable lors d'un accident impliquant un robot ou un véhicule autonome ?</li>
+        <li><strong>Accès et équité</strong> — Les bénéfices de la mécatronique seront-ils accessibles aux pays en développement ou aggraveront-ils les inégalités mondiales ?</li>
+        <li><strong>Souveraineté technologique</strong> — La dépendance aux chaînes d'approvisionnement en semi-conducteurs crée des vulnérabilités géopolitiques majeures</li>
+        <li><strong>Augmentation humaine</strong> — Jusqu'où est-il éthique d'intégrer la machine au corps humain ?</li>
+      </ul>
+
+      <div class="highlight-box">
+        <div class="highlight-box-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="highlight-box-text">
+          <strong>Note de l'auteur :</strong> La mécatronique ne peut atteindre son plein potentiel bénéfique que si son développement est guidé par une éthique rigoureuse, une gouvernance inclusive et une volonté politique d'investir massivement dans l'éducation scientifique et technique — en particulier sur le continent africain, qui recèle un potentiel humain exceptionnel encore largement sous-exploité dans ce domaine.
+        </div>
+      </div>
+
+      <div class="section-rule"></div>
+
+      <h2 id="conclusion">Conclusion : Ingénieurs du Monde de Demain</h2>
+
+      <p>
+        La mécatronique est bien plus qu'une discipline d'ingénierie — c'est une vision du monde dans lequel les frontières entre le vivant et le construit, entre le physique et le numérique, entre la nature et l'artefact s'estompent progressivement. Elle exige des ingénieurs non seulement une maîtrise technique transversale, mais aussi une conscience aiguë de leurs responsabilités envers la société et la planète.
+      </p>
+
+      <p>
+        Le futur appartient à ceux qui savent faire dialoguer les disciplines, construire des ponts entre la mécanique de précision et l'intelligence artificielle, entre le code et l'acier. Ce futur s'écrit aujourd'hui, dans les laboratoires de recherche, les ateliers de fabrication et les salles de classe du monde entier.
+      </p>
+
+      <div class="sources-block">
+        <div class="sources-title">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zm8 0A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm-8 8A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm8 0A1.5 1.5 0 0110.5 9h3A1.5 1.5 0 0115 10.5v3A1.5 1.5 0 0113.5 15h-3A1.5 1.5 0 019 13.5v-3z"/></svg>
+          Références &amp; Sources
+        </div>
+        <ul class="sources-list">
+          <li><a href="https://www.ieee.org/publications/journals/mechatronics.html" target="_blank" rel="noopener">IEEE Transactions on Mechatronics — Définition officielle et publications de référence</a></li>
+          <li><a href="https://ifr.org/free-downloads/" target="_blank" rel="noopener">International Federation of Robotics — World Robotics Report 2024</a></li>
+          <li><a href="https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/" target="_blank" rel="noopener">World Economic Forum — Klaus Schwab, La Quatrième Révolution Industrielle</a></li>
+          <li><a href="https://www.media.mit.edu/groups/biomechatronics/overview/" target="_blank" rel="noopener">MIT Media Lab — Biomechatronics Group, Dr. Hugh Herr</a></li>
+          <li><a href="https://www.intuitive.com/en-us/about-us/company/technology" target="_blank" rel="noopener">Intuitive Surgical — Technologie Da Vinci Surgical System</a></li>
+          <li><a href="https://www.sae.org/blog/sae-j3016-update" target="_blank" rel="noopener">SAE International — Niveaux d'automatisation des véhicules (J3016)</a></li>
+          <li><a href="https://ethz.ch/en/news-and-events/eth-news/news/2023/01/nanorobots-in-the-bloodstream.html" target="_blank" rel="noopener">ETH Zurich — Nanorobots dans la circulation sanguine, recherches 2023</a></li>
+          <li><a href="https://softroboticstoolkit.com/" target="_blank" rel="noopener">Soft Robotics Toolkit — Harvard University, Wyss Institute</a></li>
+          <li><a href="https://www.fao.org/digital-agriculture/en/" target="_blank" rel="noopener">FAO — Agriculture numérique et robots agricoles de précision</a></li>
+          <li><a href="https://www.grandviewresearch.com/industry-analysis/collaborative-robot-market" target="_blank" rel="noopener">Grand View Research — Collaborative Robot (Cobot) Market Analysis</a></li>
+        </ul>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+
+      <nav class="toc" aria-label="Sommaire de l'article">
+        <div class="toc-header">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M0 3h16v1.5H0V3zm0 4h16v1.5H0V7zm0 4h10v1.5H0V11z"/></svg>
+          <span class="toc-title">Sommaire</span>
+        </div>
+        <ul class="toc-list">
+          <li><a href="#definition" class="active">Qu'est-ce que la Mécatronique ?</a></li>
+          <li><a href="#piliers">Les quatre piliers fondateurs</a></li>
+          <div class="toc-sep"></div>
+          <li><a href="#industrie">L'Industrie 4.0</a></li>
+          <li><a href="#cobots">Les Cobots</a></li>
+          <div class="toc-sep"></div>
+          <li><a href="#medical">Mécatronique Médicale</a></li>
+          <li><a href="#protheses">Prothèses bioniques</a></li>
+          <li><a href="#chirurgie">Chirurgie robotique</a></li>
+          <div class="toc-sep"></div>
+          <li><a href="#transport">Révolution du Transport</a></li>
+          <div class="toc-sep"></div>
+          <li><a href="#agriculture">Agriculture de Précision</a></li>
+          <div class="toc-sep"></div>
+          <li><a href="#futur">L'Horizon 2040</a></li>
+          <li><a href="#nanorobots">Nanorobots médicaux</a></li>
+          <li><a href="#soft-robotics">Soft Robotics</a></li>
+          <div class="toc-sep"></div>
+          <li><a href="#enjeux">Enjeux Éthiques</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-share">
+        <div class="sidebar-share-label">Profil &amp; partage</div>
+        <div class="share-btns">
+          <a
+            href="https://www.linkedin.com/in/sulaimanu-adamu-bello-4059a9309"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="share-btn"
+            title="Voir le profil LinkedIn de Sulaimanu Adamu Bello"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span class="share-btn-label">LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/SABCORP2002"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="share-btn"
+            title="Voir le profil GitHub de Sulaimanu Adamu Bello"
+          >
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+            <span class="share-btn-label">GitHub</span>
+          </a>
+        </div>
+
+        <!-- Copy link -->
+        <button class="share-btn-copy" id="copy-link-btn" type="button">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+          </svg>
+          <span>Copier le lien de l'article</span>
+        </button>
+
+        <div class="tags">
+          <span class="tag">Mécatronique</span>
+          <span class="tag">Robotique</span>
+          <span class="tag">IA</span>
+          <span class="tag">Industrie 4.0</span>
+          <span class="tag">Innovation</span>
+          <span class="tag">Ingénierie</span>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="site-footer">
+    Article rédigé par <span>Sulaimanu Adamu Bello</span> &mdash; Février 2026 &mdash; Tous droits réservés
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
