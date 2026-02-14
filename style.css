@@ -1,16 +1,11 @@
-/* ================================================================
-   style.css — La Mécatronique | Sulaimanu Adamu Bello
-   Version 2.0 — Production Ready
-   ================================================================ */
 
-/* ─── RESET ───────────────────────────────────────────────────── */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ─── DESIGN TOKENS ───────────────────────────────────────────── */
 :root {
   --ink:        #0d0d0d;
   --paper:      #f4efe6;
@@ -29,16 +24,15 @@
   --sans:       'DM Sans', sans-serif;
   --mono:       'DM Mono', monospace;
   --max-w:      1140px;
-  --header-h:   62px;   /* hauteur réelle du header fixe */
+  --header-h:   62px;   
   --radius:     6px;
   --transition: .22s cubic-bezier(.4, 0, .2, 1);
 }
 
-/* ─── BASE ────────────────────────────────────────────────────── */
 html {
   font-size: 18px;
   scroll-behavior: smooth;
-  /* empêche les ancres d'atterrir sous le header fixe */
+  
   scroll-padding-top: calc(var(--header-h) + 16px);
 }
 
@@ -51,27 +45,23 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ─── SELECTION ────────────────────────────────────────────────── */
 ::selection {
   background: var(--gold-dim);
   color: var(--ink);
 }
 
-/* ─── FOCUS ────────────────────────────────────────────────────── */
 :focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-/* ─── LIENS DE BASE ────────────────────────────────────────────── */
 a {
   color: inherit;
   text-decoration: none;
   transition: color var(--transition), opacity var(--transition);
 }
 
-/* ─── READING PROGRESS BAR ─────────────────────────────────────── */
 #progress-bar {
   position: fixed;
   top: 0; left: 0;
@@ -89,7 +79,6 @@ a {
   to   { background-position: 200% 0%; }
 }
 
-/* ─── HEADER ───────────────────────────────────────────────────── */
 .site-header {
   position: fixed;
   top: 3px; left: 0; right: 0;
@@ -137,7 +126,6 @@ a {
   transition: border-color var(--transition);
 }
 
-/* ─── HERO ─────────────────────────────────────────────────────── */
 .hero {
   position: relative;
   min-height: 100svh;
@@ -163,7 +151,6 @@ a {
   transition: opacity 1.2s ease;
 }
 
-/* Circuit SVG décoratif animé */
 .hero-svg {
   position: absolute;
   inset: 0;
@@ -172,7 +159,6 @@ a {
   opacity: .15;
 }
 
-/* Animation légère des lignes circuit */
 .hero-svg polyline {
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
@@ -192,7 +178,6 @@ a {
   to { stroke-dashoffset: 0; }
 }
 
-/* Pulse des noeuds de circuit */
 .hero-svg circle {
   animation: pulseDot 3s ease-in-out infinite;
 }
@@ -215,7 +200,6 @@ a {
   );
 }
 
-/* Léger vignette latérale */
 .hero-overlay::after {
   content: '';
   position: absolute;
@@ -226,7 +210,7 @@ a {
 .hero-content {
   position: relative;
   z-index: 2;
-  /* padding-top = hauteur header + espace de sécurité */
+  
   padding: calc(var(--header-h) + 2rem) 2.5rem 4.5rem;
   max-width: var(--max-w);
   margin: 0 auto;
@@ -325,7 +309,6 @@ a {
 }
 .meta-item svg { width: 13px; height: 13px; fill: rgba(242,237,228,.35); }
 
-/* Scroll cue */
 .scroll-cue {
   position: absolute;
   bottom: 2rem;
@@ -349,7 +332,6 @@ a {
 }
 .scroll-cue svg { width: 20px; height: 20px; fill: rgba(242,237,228,.35); }
 
-/* ─── MAIN LAYOUT ──────────────────────────────────────────────── */
 .main-wrapper {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -360,12 +342,10 @@ a {
   align-items: start;
 }
 
-/* ─── ARTICLE BODY ─────────────────────────────────────────────── */
 .article-body {
   min-width: 0;
 }
 
-/* ── Intro ── */
 .article-intro {
   font-size: 1.15rem;
   font-weight: 400;
@@ -381,7 +361,6 @@ a {
 .article-intro.visible  { opacity: 1; transform: translateY(0); }
 .article-intro strong   { font-weight: 600; color: var(--gold); }
 
-/* ── Images article ── */
 .article-img-wrap {
   margin: 2.4rem 0;
   border-radius: var(--radius);
@@ -403,7 +382,6 @@ a {
 }
 .article-img-wrap:hover img { transform: scale(1.018); filter: brightness(1.04); }
 
-/* Placeholder affiché si l'image est absente */
 .img-placeholder {
   width: 100%;
   height: 310px;
@@ -444,7 +422,6 @@ a {
 .article-img-caption svg   { width: 13px; height: 13px; fill: var(--muted); flex-shrink: 0; }
 .article-img-caption span  { font-family: var(--mono); font-size: .63rem; letter-spacing: .05em; color: var(--muted); }
 
-/* ── Headings ── */
 .article-body h2 {
   font-family: var(--serif);
   font-size: clamp(1.5rem, 2.4vw, 1.95rem);
@@ -487,7 +464,6 @@ a {
 }
 .article-body h3.visible { opacity: 1; transform: translateY(0); }
 
-/* ── Paragraphes ── */
 .article-body p {
   margin-bottom: 1.45rem;
   color: #2e2a25;
@@ -498,7 +474,6 @@ a {
 }
 .article-body p.visible { opacity: 1; transform: translateY(0); }
 
-/* ── Lien source inline ── */
 .source-link {
   display: inline-flex;
   align-items: center;
@@ -516,7 +491,6 @@ a {
 .source-link:hover       { color: var(--gold-2); border-color: var(--gold-2); }
 .source-link svg         { width: 11px; height: 11px; fill: currentColor; }
 
-/* ── Listes ── */
 .article-body ul,
 .article-body ol {
   margin: 1.2rem 0 1.9rem;
@@ -570,7 +544,6 @@ a {
   font-weight: 500;
 }
 
-/* ── Blockquote ── */
 .article-body blockquote {
   position: relative;
   margin: 3.2rem 0;
@@ -585,7 +558,6 @@ a {
 }
 .article-body blockquote.visible { opacity: 1; transform: scale(1); }
 
-/* Guillemet décoratif SVG */
 .article-body blockquote::before {
   content: '';
   position: absolute;
@@ -613,7 +585,6 @@ a {
   font-style: normal;
 }
 
-/* ── Stat cards ── */
 .stat-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -672,7 +643,6 @@ a {
 }
 .stat-source:hover { color: var(--gold-2); }
 
-/* ── Highlight box ── */
 .highlight-box {
   display: flex;
   gap: 1.2rem;
@@ -700,7 +670,6 @@ a {
 .highlight-box-text         { font-size: .9rem; color: #2e2a25; line-height: 1.72; }
 .highlight-box-text strong  { color: var(--ink); font-weight: 600; }
 
-/* ── Vidéo YouTube ── */
 .video-wrap {
   position: relative;
   padding-bottom: 56.25%;
@@ -729,7 +698,6 @@ a {
   margin-top: .85rem;
 }
 
-/* ── Séparateur ── */
 .section-rule {
   height: 1px;
   background: linear-gradient(90deg, var(--gold), var(--rule), transparent);
@@ -737,7 +705,6 @@ a {
   opacity: .6;
 }
 
-/* ── Bloc sources ── */
 .sources-block {
   background: var(--paper-2);
   border: 1px solid var(--rule);
@@ -795,7 +762,6 @@ a {
 }
 .sources-list a:hover { color: var(--gold-2); border-color: var(--gold-2); }
 
-/* ─── SIDEBAR ──────────────────────────────────────────────────── */
 .sidebar {
   position: sticky;
   top: calc(var(--header-h) + 16px);
@@ -805,7 +771,6 @@ a {
   gap: 1.2rem;
 }
 
-/* ── TOC ── */
 .toc {
   background: var(--ink);
   color: var(--paper);
@@ -831,7 +796,6 @@ a {
   color: var(--gold-2);
 }
 
-/* Scroll interne si trop d'entrées */
 .toc-list {
   list-style: none;
   display: flex;
@@ -871,7 +835,6 @@ a {
 }
 .toc-list a.active::before { background: var(--gold); transform: scale(1.3); }
 
-/* Séparateur dans la liste (maintenant un <li> valide) */
 .toc-sep {
   height: 1px;
   background: rgba(244,239,230,.07);
@@ -879,7 +842,6 @@ a {
   pointer-events: none;
 }
 
-/* ── Sidebar partage & profil ── */
 .sidebar-share {
   background: var(--paper-2);
   border: 1px solid var(--rule);
@@ -973,7 +935,6 @@ a {
 }
 .tag:hover { border-color: var(--gold); color: var(--gold); }
 
-/* ─── BOUTON RETOUR EN HAUT ────────────────────────────────────── */
 #back-to-top {
   position: fixed;
   bottom: 2.2rem;
@@ -1004,7 +965,6 @@ a {
 }
 #back-to-top svg { width: 18px; height: 18px; fill: var(--paper); }
 
-/* ─── FOOTER ───────────────────────────────────────────────────── */
 .site-footer {
   background: var(--ink);
   color: rgba(244,239,230,.5);
@@ -1071,7 +1031,6 @@ a {
   color: rgba(244,239,230,.3);
 }
 
-/* ─── KEYFRAMES ────────────────────────────────────────────────── */
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-20px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -1085,7 +1044,6 @@ a {
   50%       { transform: translateY(7px); }
 }
 
-/* ─── REDUCED MOTION ───────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: .01ms !important;
@@ -1094,7 +1052,6 @@ a {
   .hero-svg polyline { stroke-dasharray: none; stroke-dashoffset: 0; }
 }
 
-/* ─── RESPONSIVE 860px ─────────────────────────────────────────── */
 @media (max-width: 860px) {
   .main-wrapper {
     grid-template-columns: 1fr;
@@ -1114,7 +1071,6 @@ a {
   .scroll-cue   { display: none; }
 }
 
-/* ─── RESPONSIVE 500px ─────────────────────────────────────────── */
 @media (max-width: 500px) {
   html { font-size: 16px; }
   .stat-row             { grid-template-columns: 1fr; }
@@ -1125,7 +1081,6 @@ a {
   .share-btn            { width: 100%; }
 }
 
-/* ─── PRINT ────────────────────────────────────────────────────── */
 @media print {
   #progress-bar, .site-header, .scroll-cue,
   .sidebar, #back-to-top, .site-footer { display: none !important; }
@@ -1143,7 +1098,7 @@ a {
   .main-wrapper { display: block; padding: 0; max-width: 100%; }
   .article-body { opacity: 1 !important; transform: none !important; }
 
-  /* Forcer la visibilité de tous les éléments animés */
+  
   .article-body h2,
   .article-body h3,
   .article-body p,
